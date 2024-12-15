@@ -1,0 +1,46 @@
+Reading:
+1. https://www.shells.com/l/en-US/tutorial/Installing-and-using-tmux-on-Ubuntu-20-04
+2. https://www.baeldung.com/linux/tmux-kill-respawn-pane
+
+# Tmux Command Reference
+
+## Basic Session Management
+-----------------------------------------------------------------------------
+Command                     | Description
+---------------------------|---------------------------------------------------
+tmux                       | Start new tmux session
+tmux new -s session_name   | Create new named session
+tmux ls                    | List all sessions
+tmux attach-session -t N   | Attach to session number N
+CTRL+b d                   | Detach from current session
+CTRL+b -> kill-session     | Kill current session
+
+## Window Management
+- A session can have multiple windows 
+-----------------------------------------------------------------------------
+Command                     | Description
+---------------------------|---------------------------------------------------
+CTRL+b c                   | Create new window
+CTRL+b w                   | Switch between windows (Only shows the windows in the current session)
+CTRL+b [number]            | Go to specific window by number
+CTRL+b ,                   | Rename current window
+CTRL+b &                   | Close/Kill current window and all panes within it
+
+## Pane Management
+-----------------------------------------------------------------------------
+Command                     | Description
+---------------------------|---------------------------------------------------
+CTRL+b %                   | Split pane horizontally
+CTRL+b "                   | Split pane vertically
+CTRL+b o                   | Go to next pane
+CTRL+b ;                   | Toggle between current and previous pane
+CTRL+b x                   | Close/Kill current pane
+
+## Usage Notes
+-----------------------------------------------------------------------------
+- For CTRL+b commands:
+  1. Press and hold CTRL and b together
+  2. Release both keys
+  3. Then press the next key in the sequence
+- All commands are case-sensitive
+- Session numbers are automatically assigned if not specified
