@@ -19,22 +19,34 @@ CTRL+b -> kill-session     | Kill current session
 - A session can have multiple windows 
 -----------------------------------------------------------------------------
 Command                     | Description
----------------------------|---------------------------------------------------
-CTRL+b c                   | Create new window
-CTRL+b w                   | Switch between windows (Only shows the windows in the current session)
-CTRL+b [number]            | Go to specific window by number
-CTRL+b ,                   | Rename current window
-CTRL+b &                   | Close/Kill current window and all panes within it
+----------------------------|---------------------------------------------------
+CTRL+b c                    | Create new window
+CTRL+b w                    | Switch between windows (Only shows the windows in the current session)
+CTRL+b [number]             | Go to specific window by number
+CTRL+b ,                    | Rename current window
+CTRL+b &                    | Close/Kill current window and all panes within it
 
 ## Pane Management
 -----------------------------------------------------------------------------
 Command                     | Description
----------------------------|---------------------------------------------------
-CTRL+b %                   | Split pane horizontally
-CTRL+b "                   | Split pane vertically
-CTRL+b o                   | Go to next pane
-CTRL+b ;                   | Toggle between current and previous pane
-CTRL+b x                   | Close/Kill current pane
+----------------------------|---------------------------------------------------
+CTRL+b %                    | Split pane horizontally
+CTRL+b "                    | Split pane vertically
+CTRL+b o                    | Go to next pane
+CTRL+b ;                    | Toggle between current and previous pane
+CTRL+b x                    | Close/Kill current pane
+
+## Bonus 
+-----------------------------------------------------------------------------
+Command                     | Description
+----------------------------|---------------------------------------------------
+CTRL+b [                    | Enable scrolling.  Quit with by pressing q.  [Link: https://superuser.com/questions/209437/how-do-i-scroll-in-tmux]
+
+
+
+
+
+
 
 ## Usage Notes
 -----------------------------------------------------------------------------
