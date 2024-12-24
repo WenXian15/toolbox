@@ -1,0 +1,10 @@
+vim is the most common tools used to edit rtl files.  Here are some commands that are useful 
+
+1. The netlist is way too big to open.  And you need to edit a few lines.  Using file example.txt 
+cat example.txt | grep "pattern"
+sed -t 
+source https://askubuntu.com/questions/20414/find-and-replace-text-within-a-file-using-commands
+
+
+2. Highlight and copy the text to command bar in vim
+https://stackoverflow.com/questions/4878980/vim-insert-selected-text-into-command-line
