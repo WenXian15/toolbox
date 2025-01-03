@@ -1,0 +1,17 @@
+set softtabstop=4
+set autoindent
+set cindent
+set backspace=indent
+set nowrap
+
+set nu
+
+set laststatus=2
+set statusline=%F%m%r%h%w\ [%{&ff}]\ [%Y]\ [%l,%v][%p%%]
+
+syntax on
+colorscheme default
+filetype plugin on
+
+set omnifunc=ccomplete#Complete
+set tag=
