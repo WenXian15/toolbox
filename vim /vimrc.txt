@@ -9,6 +9,8 @@ set nu
 set laststatus=2
 set statusline=%F%m%r%h%w\ [%{&ff}]\ [%Y]\ [%l,%v][%p%%]
 
+nnoremap <silent> # :vimgrep /\<C-r><C-w>/\g **/*<CR>:copen<CR>
+
 syntax on
 colorscheme default
 filetype plugin on
