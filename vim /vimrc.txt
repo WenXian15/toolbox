@@ -11,7 +11,7 @@ set statusline=%F%m%r%h%w\ [%{&ff}]\ [%Y]\ [%l,%v][%p%%]
 
 " Text search helper
 " Search only from current file
-nnoremap <silent> # :vimgrep /<C-r><C-w>/g %<CR>:copen<CR>
+nnoremap <silent> # :vimgrep /\<<C-r><C-w>/>/g %<CR>:copen<CR>
 " Search recursively from current directory/folder
 nnoremap <silent> # :vimgrep /\<<C-r><C-w>\>/g **/*<CR>:copen<CR>
 
