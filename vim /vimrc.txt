@@ -3,13 +3,17 @@ set autoindent
 set cindent
 set backspace=indent
 set nowrap
-
 set nu
 
+" Show the position of cursor in more details
 set laststatus=2
 set statusline=%F%m%r%h%w\ [%{&ff}]\ [%Y]\ [%l,%v][%p%%]
 
-nnoremap <silent> # :vimgrep /\<C-r><C-w>/\g **/*<CR>:copen<CR>
+" Text search helper
+" Search only from current file
+nnoremap <silent> # :vimgrep /<C-r><C-w>/g %<CR>:copen<CR>
+" Search recursively from current directory/folder
+nnoremap <silent> # :vimgrep /\<<C-r><C-w>\>/g **/*<CR>:copen<CR>
 
 syntax on
 colorscheme default
