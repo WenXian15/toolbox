@@ -15,6 +15,7 @@ nnoremap <silent> # :vimgrep /\<<C-r><C-w>/>/g %<CR>:copen<CR>
 " Search recursively from current directory/folder
 nnoremap <silent> # :vimgrep /\<<C-r><C-w>\>/g **/*<CR>:copen<CR>
 
+
 syntax on
 colorscheme default
 filetype plugin on
