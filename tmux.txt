@@ -15,6 +15,9 @@ tmux attach-session -t N   | Attach to session number N
 CTRL+b d                   | Detach from current session
 CTRL+b -> kill-session     | Kill current session
 
+* It is useful to rename session to something unique so that you could switch between them
+tmux rename-session [-t current-name] [new-name]
+
 ## Window Management
 - A session can have multiple windows 
 -----------------------------------------------------------------------------
